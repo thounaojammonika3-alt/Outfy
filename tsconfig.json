@@ -31,7 +31,7 @@
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "preserve",
-    "moduleResolution": "node",
+    "moduleResolution": "bundler",
     "baseUrl": ".",
     "paths": {
       "@/*": ["./*"],
@@ -47,7 +47,7 @@
       "@/config/*": ["./config/*"],
       "@/public/*": ["./public/*"]
     },
-    "types": ["node", "jest", "@testing-library/jest-dom"]
+    "ignoreDeprecations": "6.0"
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
   "exclude": ["node_modules"]

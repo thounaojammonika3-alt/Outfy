@@ -4,8 +4,6 @@ const nextConfig: NextConfig = {
   reactStrictMode: true,
   poweredByHeader: false,
   compress: true,
-  optimizeFonts: true,
-  swcMinify: true,
   productionBrowserSourceMaps: false,
   
   images: {
@@ -95,7 +93,7 @@ const nextConfig: NextConfig = {
     };
   },
 
-  webpack: (config, { isServer }) => {
+  webpack: (config) => {
     config.optimization = {
       ...config.optimization,
       usedExports: true,
